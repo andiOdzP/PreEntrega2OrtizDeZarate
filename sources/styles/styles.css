@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+
+.encabezado-info{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #f6f6f6 !important;
+    border-bottom:  1px solid #000;
+}
+
+/*==========BOTON NAVBAR=========*/
+.navbar__btn{
+    display: inline;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    color: black;
+    text-decoration: none;
+}
+
+.navbar__btn:hover{
+    color:black
+}
+
+
+.cta {
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/*===============================*/
+
+/*=========BOTONES CARRUSEL DESTACADO========*/
+.btn{
+    border-radius: 0px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border: none;
+}
+/*===========================================*/
+
+/*============CARDS CARRUSEL DESTACADO=======*/
+.card {
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.card-title2{
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5;
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    text-decoration: none;
+    line-height: 0rem;
+    color: black !important;
+}
+
+.container-Destacado{
+    padding-right: auto;
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+    margin-right: 0rem;
+    margin-left: auto;
+    border-bottom: 1px solid black;
+}
+
+/*===========================================*/
+
+
+/*========Galeria BOTON VER MAS========*/
+
+.btn__vermas{
+    color: white;
+    text-decoration: none;
+}
+
+/*=====================================*/
+
+.noticia{
+    border: 1px solid black;
+}
+
+
+.mt-0 {
+    margin-top: 80px!important;
+}
+
+.noticias__img{
+    padding: 0px;
+}
+
+.noticias__p{
+    padding: 1rem;
+}
+
+.pie{
+    border-top: 1px solid black;
+    background-color: #f6f6f6;
+}
+
+.subtitulo{
+    max-width: 600px;
+}
+
+:root {
+    --bs-font-sans-serif: 'Space Grotesk', sans-serif;
+}
+
+@media (min-width: 576px) 
+{
+    
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto !important;
+        justify-content: flex-end !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    /*IMAGEN DINO HEADER*/
+    .img-fluid {
+        max-width: 200%;
+        height: auto;
+    }
+}
+
