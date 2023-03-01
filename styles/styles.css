@@ -104,6 +104,7 @@ body{
     border-radius: 0px;
 }
 
+
 .card-title2{
     margin-bottom: 0.5rem;
     padding-bottom: 0.5;
@@ -126,18 +127,43 @@ body{
 /*===========================================*/
 
 
-/*========Galeria BOTON VER MAS========*/
+/*========GALERIA========*/
 
 .btn__vermas{
     color: white;
     text-decoration: none;
 }
 
+.bg-f6{
+    background-color: #f6f6f6 !important;
+}
+
+.over-hidden{
+    height: 200px !important;
+    overflow: hidden !important;
+}
+/*=========================*/
+
+
+/*========FORMULARIO SUMATE========*/
+.formulario-info {
+    min-height: 300px;
+}
+
+.formaulario__color{
+    background-color: #8b8b8b;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
 /*=====================================*/
 
 .noticia{
     border: 1px solid black;
 }
+
 
 
 .mt-0 {
@@ -159,6 +185,10 @@ body{
 
 .subtitulo{
     max-width: 600px;
+}
+
+element.style {
+    height: 300px;
 }
 
 :root {
@@ -190,6 +220,10 @@ body{
     .img-fluid {
         max-width: 200%;
         height: auto;
+    }
+
+    .formulario{
+        max-width: 800px !important;
     }
 }
 
