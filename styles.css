@@ -68,6 +68,7 @@ nav {
   /*centro la ul y le marco el maximo que se puede estirar*/
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   max-width: 700px;
 
   /*hago q la ul sea flex y separo los li*/
