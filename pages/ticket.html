@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-gif" src="/sources/Logotipo.gif" alt="">
+            <h1>Kosinov</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li><div class="menu-pagina-punto-ubicado"></div><a class="menu-pagina-a-ubicado" href="/pages/eventos.html">BACK</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <section class="seccion-tickets">
+            <h2 class="seccion-tickets-titulo">PEDI TU TICKET</h2>
+            <p>Completa el formulario con tu infomacion personal. Al completarlo, recibiras el ticket via email.</p>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <label for="first-name">NOMBRE: <input id="first-name" name="first-name" type="text" required /></label>
+                    <label for="last-name">APELLIDO: <input id="last-name" name="last-name" type="text" required /></label>
+                    <label for="email">EMAIL: <input id="email" name="email" type="email" required /></label>
+                    <label for="age">DNI: <input id="dni type="number" name="dni" min="20000000" max="100000000" required/></label>
+                    <label for="profile-picture">FOTO DEL DNI<input id="dni-img" type="file" name="file" required/></label>
+                </fieldset>
+                <label for="terms-and-conditions">
+                    <input  id="terms-and-conditions" type="checkbox"  name="terms-and-conditions" required/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+                  </label>
+                  <input type="submit" value="PEDIR TICKET" />
+            </form>
+        </section>
+    </main>
+    <footer>Pre-Entrega 1 Andres Ortiz de Zarate</footer>
+</body>
+</html>
