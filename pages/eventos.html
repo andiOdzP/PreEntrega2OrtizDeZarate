@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <div class="container-fluid bg-danger">
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col logo">
           <img class="logo-gif" src="/sources/Logotipo.gif" alt="">
@@ -23,40 +23,55 @@
     <nav>
       <ul class="menu">
         <li>
-          <div class="menu-pagina-punto-ubicado"></div><a class="menu-pagina-a-ubicado" href="#">INICIO</a>
+          <div class="menu-pagina-punto"></div><a class="menu-pagina-a" href="/index.html">INICIO</a>
         </li>
         <li>
-          <div class="menu-pagina-punto"></div><a class="menu-pagina-a" href="/pages/biblioteca.html">BIBLIOTECA</a>
+          <div class="menu-pagina-punto"></div><a class="menu-pagina-a" href="./biblioteca.html">BIBLIOTECA</a>
         </li>
         <li>
-          <div class="menu-pagina-punto"></div><a class="menu-pagina-a" href="/pages/eventos.html">EVENTOS</a>
+          <div class="menu-pagina-punto-ubicado"></div><a class="menu-pagina-a-ubicado" href="#">EVENTOS</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="seccion-eventos">
-      <div class="evento">
-        <p>NAS-ILLMATIC</p>
-        <p>30TH ANNIVERSARY TOUR</p>
-        <p>14 Events</p>
-        <img src="https://www.shutterstock.com/image-vector/rock-roll-gig-poster-flyer-600nw-1422202031.jpg"
-          alt="rock y roll evento" width="100px">
-        <a href="/pages/ticket.html">TICKETS</a>
-      </div>
-      <div class="evento">
-        <p>NAS-ILLMATIC</p>
-        <p>30TH ANNIVERSARY TOUR</p>
-        <p>14 Events</p>
-        <img src="https://www.shutterstock.com/image-vector/rock-roll-gig-poster-flyer-600nw-1422202031.jpg"
-          alt="rock y roll evento" width="100px">
-        <a href="/pages/ticket.html">TICKETS</a>
+  <main class="container-fluid">
+    <section class="row justify-content-center">
+      <div class="col-sm-12 col-md-9  col-xxl-6 m-5">
+        <h2 class="seccion-titulo">EVENTOS</h2>
+        <div class="contenedor--grid mt-3">
+            <a href="/pages/ticket.html"><img src="/sources/evento1.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento2.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento3.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento4.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento5.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento6.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento7.jpg" alt=""></a>
+            <a href="/pages/ticket.html"><img src="/sources/evento8.jpg" alt=""></a>
+        </div>  
       </div>
     </section>
-
-
   </main>
-  <footer>Pre-Entrega 1 Andres Ortiz de Zarate</footer>
+  <footer class=" container-fluid ">
+    <div class="row justify-content-center mt-4">
+
+        <div class="col-sm-12 col-md-9 col-xxl-6">
+            <h3 class="text-center">Pre-Entrega Numero 2</h3>
+            <div class="row justify-content-center">
+                <div class="color1 col-xs-12 col-sm-6 mt-3">
+                    <h4>Informacion del Proyecto</h4>
+                    <p>Tanto la página index y eventos son responsive y están trabajando con el framework bootstrap
+                        además de flexbox y grid. La página ticket también es responsive.</p>
+                </div>
+                <div class="color2 col-xs-12 col-sm-3 mt-3 info__personal">
+                    <h4>Informacion Personal</h4>
+                    <p>Nombre: Andres Ortiz de Zarate</p>
+                    <P>Email: andresodz09@gmail.com</P>
+                    <a href="">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

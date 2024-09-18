@@ -14,8 +14,6 @@
 
 body {
   background-color: #fafafa;
-  padding: 0px !important;
-
 }
 
 header {
@@ -46,6 +44,7 @@ nav {
   background-color: rgb(240, 240, 240);
   padding: 7px 0;
 }
+
 
 .no-padding{
   padding: 0;
@@ -162,7 +161,7 @@ input[type="submit"] {
   height: 2em;
   font-size: 1.1rem;
   background-color: gold;
-  min-width: 300px;
+  max-width: 300px;
 }
 
 
@@ -188,6 +187,7 @@ input[type="submit"] {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 
@@ -282,11 +282,7 @@ input[type="submit"] {
 }
 
 
-.artista-imagen {
-  max-height: 250px;
-  max-width: 250px;
 
-}
 
 
 .artista-imagen img {
@@ -316,8 +312,8 @@ input[type="submit"] {
 }
 
 
-/*----------------------------*/
-
+/*------------fin seccion artista------------*/
+/*-------------seccion evento---------------*/
 
 
 .seccion-eventos {
@@ -343,6 +339,25 @@ input[type="submit"] {
   margin-bottom: 0;
 }
 
+.contenedor--grid{
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px,1fr)
+  );
+  gap: 32px 10px;
+  max-width: 1500px;
+}
+
+.contenedor--grid img{
+  width: 100%;
+  height: auto;
+}
+
+/*---------------fin seccion evento----------------------*/
+/*---------------seccion tickets----------------------*/
+
+
 
 .seccion-tickets {
   background-color: rgb(233, 233, 233);
@@ -367,6 +382,8 @@ input[type="submit"] {
   text-align: center;
 }
 
+
+/*--------------- fin seccion tickets------------------*/
 
 
 .seccion-album {
@@ -418,20 +435,34 @@ input[type="submit"] {
 
 
 
-
 /*=================================================================================================================================*/
 /*----------------------------------------------------FOOTER---------------------------------------------------*/
 
-footer {
-  text-align: center;
+footer{
+  margin-top: 40px;
+  border-top: 1px solid black ;
+  padding-bottom: 20px;
 }
+
+footer p{
+  margin: 0;
+}
+
+.info__personal{
+  min-width: 260px;
+}
+
+
 
 @media (width < 1200px) {
   :root {
-    --width: 230px;
-    --height: 230px;
+    --width: 250px;
+    --height: 250px;
   }
 }
+
+
+
 @media (width < 480px) {
   nav {
     position: fixed;
@@ -508,8 +539,36 @@ footer {
   }
 
 
+  legend{
+    font-size: 18px;
+  }
+
+
+  input {
+    font-size: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 0.8rem;
+  }
+
+label {
+  font-size: 12px;
+}
+
+footer{
+  padding-bottom: 60px;
+}
 
   
+  :root {
+    --width: 200px;
+    --height: 200px;
+  }
+}
+
+
+@media (width < 350px) {
   :root {
     --width: 150px;
     --height: 150px;
